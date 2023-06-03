@@ -10,8 +10,6 @@ local formatting = null_ls.builtins.formatting -- to setup formatters
 
 null_ls.setup({
   sources = {
-    formatting.prettier.with({
-      timeout = 50000,
-    }), -- js/ts formatter
+    formatting.prettier  -- js/ts formatter
   },
 })
