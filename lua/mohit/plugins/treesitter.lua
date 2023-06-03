@@ -14,16 +14,7 @@ treesitter.setup({
   -- enable autotagging (w/ nvim-ts-autotag plugin)
   autotag = { enable = true },
   context_commentstring = {
-    enable = true,
-    config = {
-      javascript = {
-        __default = '// %s',
-        jsx_element = '{/* %s */}',
-        jsx_fragment = '{/* %s */}',
-        jsx_attribute = '// %s',
-        comment = '// %s',
-      },
-    },
+    enable = true
   },
   -- ensure these language parsers are installed
   ensure_installed = {},

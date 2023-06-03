@@ -7,11 +7,11 @@ end
 -- for conciseness
 local formatting = null_ls.builtins.formatting -- to setup formatters
 
--- to setup format on save
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 null_ls.setup({
   sources = {
-    formatting.prettier, -- js/ts formatter
+    formatting.prettier.with({
+      timeout = 50000,
+    }), -- js/ts formatter
   },
 })

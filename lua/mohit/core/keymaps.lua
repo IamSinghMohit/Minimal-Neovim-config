@@ -81,7 +81,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
  keymap("n", "<leader>h", ":noh<CR>", opts)
 
 -- formating
- keymap("n", "<leader>f", ":lua vim.lsp.buf.format()<CR>", opts)
+ keymap("n", "<leader>f", ":lua vim.lsp.buf.format({ timeout_ms = 3000 })<CR>", opts)
 -- Map Alt+Backspace to Ctrl+W in insert mode
 vim.api.nvim_set_keymap('i', '<A-BS>', '<C-W>', { noremap = true })
 
