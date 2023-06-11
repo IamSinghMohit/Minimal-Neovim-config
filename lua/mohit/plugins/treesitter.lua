@@ -14,10 +14,13 @@ treesitter.setup({
   -- enable autotagging (w/ nvim-ts-autotag plugin)
   autotag = { enable = true },
   context_commentstring = {
-    enable = true
+    enable = true,
+    enable_autocmd = false,
   },
   -- ensure these language parsers are installed
-  ensure_installed = {},
+  ensure_installed = {
+    'css','javascript', 'scss', 'tsx', 'typescript'
+  },
   -- auto install above language parsers
   auto_install = false,
 })
