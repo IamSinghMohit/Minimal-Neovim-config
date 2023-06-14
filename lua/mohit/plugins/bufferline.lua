@@ -11,7 +11,7 @@ bufferline.setup {
     left_mouse_command = "buffer %d",    -- can be a string | function, see "Mouse actions"
     middle_mouse_command = nil,          -- can be a string | function, see "Mouse actions"
     indicator_icon = nil,
-    indicator = { style = "underline" },
+    -- indicator = { style = "underline" },
     buffer_close_icon = '',
     modified_icon = "●",
     close_icon = "",

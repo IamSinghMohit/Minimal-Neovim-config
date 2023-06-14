@@ -8,7 +8,7 @@ end
 treesitter.setup({
   -- enable syntax highlighting
   highlight = {
-    enable = false,
+    enable = true,
   },
   indent = { enable = false },
   -- enable autotagging (w/ nvim-ts-autotag plugin)

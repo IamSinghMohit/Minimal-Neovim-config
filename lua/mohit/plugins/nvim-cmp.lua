@@ -34,11 +34,11 @@ cmp.setup({
   window = {
     completion = {
       border = "rounded",
-      winhighlight = "Normal:CmpNormal",
+      winhighlight = "FloatBorder:Normal",
     },
     documentation = {
       border = "rounded",
-      winhighlight = "Normal:CmpDocNormal",
+      winhighlight = "FloatBorder:Normal",
     }
   },
   mapping = cmp.mapping.preset.insert({

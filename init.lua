@@ -13,3 +13,4 @@ require("mohit.plugins.treesitter")
 require("mohit.plugins.bufferline")
 require("mohit.plugins.toggle-term")
 require("mohit.core.colorscheme")
+

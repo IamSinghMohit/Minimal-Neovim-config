@@ -39,7 +39,7 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==", opts)
 
 -- Insert --
--- Press jk fast to exit insert mode 
+-- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
 
@@ -62,27 +62,25 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Terminal --
 -- Better terminal navigation
- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
- 
- -- TREE
- keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
+keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
+keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
+keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+
+-- TREE
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 -- Terminal
- keymap("n", "<leader>t", ":lua _NODE_TOGGLE()<CR>", opts)
--- Bufferline 
- keymap("n", "<leader>bl", ":BufferLineCloseRight<CR>", opts)
- keymap("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opts)
- keymap("n", "<leader>c", ":Bdelete<CR>", opts)
- keymap("n", "<leader>bj", ":BufferLinePick<CR>", opts)
- keymap("n", "<leader>be", ":BufferLinePickClose<CR>", opts)
+keymap("n", "<M-3>", ":lua _NODE_TOGGLE()<CR>", opts)
+-- Bufferline
+keymap("n", "<leader>bl", ":BufferLineCloseRight<CR>", opts)
+keymap("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opts)
+keymap("n", "<leader>c", ":Bdelete<CR>", opts)
+keymap("n", "<leader>bj", ":BufferLinePick<CR>", opts)
+keymap("n", "<leader>be", ":BufferLinePickClose<CR>", opts)
 -- Search clearing
- keymap("n", "<leader>h", ":noh<CR>", opts)
+keymap("n", "<leader>h", ":noh<CR>", opts)
 
 -- formating
- keymap("n", "<leader>f", ":lua vim.lsp.buf.format({ timeout_ms = 3000 })<CR>", opts)
+keymap("n", "<leader>f", ":lua vim.lsp.buf.format({ timeout_ms = 3000 })<CR>", opts)
 -- Map Alt+Backspace to Ctrl+W in insert mode
 vim.api.nvim_set_keymap('i', '<A-BS>', '<C-W>', { noremap = true })
-
-

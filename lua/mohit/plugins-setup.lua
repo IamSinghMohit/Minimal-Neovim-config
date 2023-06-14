@@ -31,6 +31,8 @@ return packer.startup(function(use)
   -- packer can manage itself
   use("wbthomason/packer.nvim")
 
+  use("olimorris/onedarkpro.nvim")
+
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
   -- commenting with gc
