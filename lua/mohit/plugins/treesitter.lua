@@ -19,7 +19,7 @@ treesitter.setup({
   },
   -- ensure these language parsers are installed
   ensure_installed = {
-    'css','javascript', 'scss', 'tsx', 'typescript'
+    'css','javascript', 'scss', 'tsx', 'typescript','markdown','markdown_inline'
   },
   -- auto install above language parsers
   auto_install = false,

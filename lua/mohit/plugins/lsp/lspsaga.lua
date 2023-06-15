@@ -15,5 +15,15 @@ saga.setup({
     colors = {
       normal_bg = "#022746",
     },
+    title = false,
+    -- Border type can be single, double, rounded, solid, shadow.
+    border = "rounded",
+    winblend = 0,
+    expand = "",
+    collapse = "",
+    code_action = "󰌵",
+    incoming = "",
+    outgoing = " ",
+    hover = '',
   },
 })
