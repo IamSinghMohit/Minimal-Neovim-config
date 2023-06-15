@@ -98,7 +98,7 @@ nvimtree.setup({
         git = true,
       },
       glyphs = {
-        default = "",
+        default = "",
         symlink = "",
         folder = {
           arrow_closed = "",
