@@ -22,6 +22,4 @@ onedarkpro.setup({
   },
 })
 -- Set the colorscheme directly
-vim.g.onedark_transparent_background = false
-vim.g.onedark_terminal_italics = 2
 vim.cmd("colorscheme onedark")
