@@ -9,6 +9,8 @@ local keymap = vim.api.nvim_set_keymap
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+vim.g.user_emmet_mode='a'
+vim.g.user_emmet_install_global = 0
 
 -- Modes
 --   normal_mode = "n",
@@ -74,7 +76,7 @@ keymap("n", "<M-3>", ":lua _NODE_TOGGLE()<CR>", opts)
 -- Bufferline
 keymap("n", "<leader>bl", ":BufferLineCloseRight<CR>", opts)
 keymap("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opts)
-keymap("n", "<leader>c", ":Bdelete<CR>", opts)
+keymap("n", "<leader>c", ":Bdelete<CR>", { noremap = true })
 keymap("n", "<leader>bj", ":BufferLinePick<CR>", opts)
 keymap("n", "<leader>be", ":BufferLinePickClose<CR>", opts)
 -- Search clearing
@@ -84,3 +86,6 @@ keymap("n", "<leader>h", ":noh<CR>", opts)
 keymap("n", "<leader>f", ":lua vim.lsp.buf.format({ timeout_ms = 3000 })<CR>", opts)
 -- Map Alt+Backspace to Ctrl+W in insert mode
 vim.api.nvim_set_keymap('i', '<A-BS>', '<C-W>', { noremap = true })
+vim.api.nvim_command([[
+  autocmd FileType html,css,javascriptreact,typescriptreact EmmetInstall
+]])

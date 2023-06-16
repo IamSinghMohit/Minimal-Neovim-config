@@ -15,7 +15,7 @@ onedarkpro.setup({
     constants = "NONE",
     functions = "NONE",
     operators = "NONE",
-    variables = "italic",
+    variables = "bold",
     parameters = "italic",
     conditionals = "italic",
     virtual_text = "NONE",

@@ -86,7 +86,7 @@ nvimtree.setup({
     width = 30,
     hide_root_folder = false,
     side = "left",
-    relativenumber = true,
+    relativenumber = false,
   },
   renderer = {
     highlight_git = false,

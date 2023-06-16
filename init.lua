@@ -1,7 +1,7 @@
 require("mohit.core.options")
 require("mohit.core.keymaps")
-require("mohit.plugins-setup")
 require("mohit.core.colorscheme")
+require("mohit.plugins-setup")
 require("mohit.plugins.nvim-web-dev-icons")
 require("mohit.plugins.comment")
 require("mohit.plugins.nvim-tree")
