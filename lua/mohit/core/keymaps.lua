@@ -9,9 +9,9 @@ local keymap = vim.api.nvim_set_keymap
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-vim.g.user_emmet_mode='a'
+vim.g.user_emmet_mode='inv'
 vim.g.user_emmet_install_global = 0
-
+vim.g.user_emmet_leader_key='<C-o>'
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",

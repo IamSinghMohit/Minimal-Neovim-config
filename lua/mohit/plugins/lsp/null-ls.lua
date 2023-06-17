@@ -12,4 +12,5 @@ null_ls.setup({
   sources = {
     formatting.prettier  -- js/ts formatter
   },
+
 })

@@ -38,5 +38,5 @@ mason_null_ls.setup({
     "prettier", -- ts/js formatter
   },
   -- auto-install configured formatters & linters (with null-ls)
-  automatic_installation = true,
+  automatic_installation = false,
 })
