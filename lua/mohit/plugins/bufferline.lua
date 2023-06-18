@@ -11,10 +11,10 @@ bufferline.setup {
     left_mouse_command = "buffer %d",    -- can be a string | function, see "Mouse actions"
     middle_mouse_command = nil,          -- can be a string | function, see "Mouse actions"
     indicator_icon = nil,
-    indicator = { style = "icon" },
+    indicator = { style = "none" },
     modified_icon = "●",
-    left_trunc_marker = "",
-    right_trunc_marker = "",
+    left_trunc_marker = "",
+    right_trunc_marker = "",
     max_name_length = 30,
     max_prefix_length = 30, -- prefix used when a buffer is de-duplicated
     tab_size = 21,
@@ -26,7 +26,7 @@ bufferline.setup {
     show_close_icon = true,
     show_tab_indicators = true,
     persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
-    separator_style = "thin",   -- | "thick" | "thin" | { 'any', 'any' },
+    separator_style = "slant",   -- | "thick" | "thin" | { 'any', 'any' },
     enforce_regular_tabs = true,
     always_show_bufferline = true,
   },
