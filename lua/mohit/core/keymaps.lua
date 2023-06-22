@@ -72,11 +72,11 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- TREE
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 -- Terminal
-keymap("n", "<M-3>", ":lua _NODE_TOGGLE()<CR>", opts)
+keymap("n", "<leader>3", ":lua _NODE_TOGGLE()<CR>", opts)
 -- Bufferline
 keymap("n", "<leader>bl", ":BufferLineCloseRight<CR>", opts)
 keymap("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opts)
-keymap("n", "<leader>c", ":Bdelete<CR>", { noremap = true })
+keymap("n", "<leader>c", ":Bdelete<CR>", opts)
 keymap("n", "<leader>bj", ":BufferLinePick<CR>", opts)
 keymap("n", "<leader>be", ":BufferLinePickClose<CR>", opts)
 -- Search clearing

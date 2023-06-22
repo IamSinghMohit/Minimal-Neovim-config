@@ -10,7 +10,9 @@ local formatting = null_ls.builtins.formatting -- to setup formatters
 
 null_ls.setup({
   sources = {
-    formatting.prettier  -- js/ts formatter
+    formatting.prettier.with({
+      extra_args = { "--tab-width", '4' },
+    }) -- js/ts formatter
   },
 
 })

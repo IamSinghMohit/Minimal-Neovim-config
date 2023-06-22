@@ -92,8 +92,10 @@ return packer.startup(function(use)
   -- bufferline
   use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
   use("moll/vim-bbye")
+  -- emmet
   use("mattn/emmet-vim")
-
+  -- lualine
+  use("nvim-lualine/lualine.nvim")
   if packer_bootstrap then
     require("packer").sync()
   end

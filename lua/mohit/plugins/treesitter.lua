@@ -18,9 +18,12 @@ treesitter.setup({
     enable_autocmd = false,
   },
   -- ensure these language parsers are installed
-  ensure_installed = {
-    'css','javascript', 'scss', 'tsx', 'typescript','markdown','markdown_inline'
-  },
+  -- ensure_installed = {
+  --   'css','javascript', 'scss', 'tsx', 'typescript','markdown','markdown_inline'
+  -- },
+
+  sync_install = false,
+  ignore_install = { "javascript", "typescript", "tsx", "jsx", "typescriptreact", "javascriptreact" },
   -- auto install above language parsers
   auto_install = false,
 })
